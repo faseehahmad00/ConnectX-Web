@@ -13,7 +13,7 @@ const contacts =  [
         title: 'User 2',
         subtitle: 'What are you doing',
         date: new Date(1),
-        unread: 0,
+        unread: 2,
     },
     {
         avatar: 'https://source.unsplash.com/random/200x203/',
@@ -29,7 +29,7 @@ const contacts =  [
         title: 'User 4',
         subtitle: 'What are you doing?',
         date: new Date(),
-        unread: 0,
+        unread: 4,
     },
     {
         avatar: 'https://source.unsplash.com/random/200x205/',

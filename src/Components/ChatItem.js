@@ -11,7 +11,7 @@ export class ChatItem extends Component {
         const statusColorType = this.props.statusColorType;
 
         return (
-            <Link to={'/chat/'+this.props.title}
+            <Link to={'/chat/'+this.props.id}
                 className={classNames('rce-container-citem', this.props.className)}
                 onClick={this.props.onClick}
                 onContextMenu={this.props.onContextMenu}>

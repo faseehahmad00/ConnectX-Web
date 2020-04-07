@@ -32,7 +32,7 @@ export class ChatList extends Component {
                     this.props.dataSource.map((x, i) => (
                         <ChatItem
                             id={x.id || i}
-                            key={i}
+                            key={x.id}
                             lazyLoadingImage={this.props.lazyLoadingImage}
                             {...x}
                             onAvatarError={(e) => this.onAvatarError(x, i, e)}

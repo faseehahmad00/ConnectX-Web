@@ -14,8 +14,8 @@ export default function ChatScreen({ messages, userid }) {
     let [disabled,setDisabled] = useState(true);
 
     function updateScroll() {
-        let element = document.getElementById("bodyid");
-        element.scrollTop = element.scrollHeight;
+        // let element = document.getElementById("bodyid");
+        // element.scrollTop = element.scrollHeight;
     }
 
 
@@ -47,7 +47,7 @@ export default function ChatScreen({ messages, userid }) {
             createdAt: new Date(),
             sender: '1',
             messagetext: `${text}`,
-            status:'sent',
+            status:'sending',
         });
         setmsgs(newMessages);
         settext('');

@@ -7,11 +7,31 @@
 .title{
   color:black;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   align-items: center;
   font-family: "Segoe UI",Serif;
   max-height: 50px;
   background-color: #EFEFEF;
+}
+.title h1{
+  flex:9;
+  text-align: left;
+}
+.newUserButton{
+  flex:1;
+  outline: none;
+  border: none;
+  color: grey;
+  margin: 3px 2px 0px 0px;
+}
+.newUserButton :hover{
+  outline: none;
+  border: none;
+  color: #444;
+}
+.newUserIcon{
+  font-size: 25px;
 }
 .Body{
   flex:9.9;
@@ -39,16 +59,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px 3px 0px 5px;
 }
 .searchbar{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width : 90%;
   border-radius: 20px;
   height: 30px;
   background-color: #DDD;
+  flex:9;
 }
+
 
 .contactsHeader input{
   width: 80%;
