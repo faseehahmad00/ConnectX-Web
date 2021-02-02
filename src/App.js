@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+// import { ChatList } from 'react-chat-elements';
+import 'react-chat-elements/dist/main.css';
 import './App.css';
+import ChatList from "./Components/ChatList";
+import ContactData from "./Data/ContactData";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="title">
+          <h1>ConnectX</h1>
+        </div>
+        <div className="Body">
+            <div className='contacts'>
+                <ChatList
+                    className='chat-list'
+                    dataSource={ContactData} />
+            </div>
+            <div className='chat'>
+                <p>Chats</p>
+            </div>
+        </div>
     </div>
   );
 }
