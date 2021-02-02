@@ -2,14 +2,21 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  max-height: 100vh;
 }
 .title{
   flex:0.1;
   color:black;
   text-align: left;
-  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   max-height: 10vh;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #EEE;
+  border-radius: 2px;
+  font-family: "Segoe UI",Serif;
 }
 .Body{
   flex:9.9;
@@ -18,14 +25,53 @@
   justify-content: flex-end;
   background-color: black;
   color: white;
+  max-height: 89vh;
 }
 .contacts{
-  flex:2;
+  flex:2.5;
   background-color: #888;
   max-height: 90vh;
   overflow: auto;
 }
 .chat{
-  flex:8;
-  background-color: orange;
+  flex:7.5;
+  background-color: white;
+}
+.Chathome{
+  height:100%;
+  color: black;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.Chathome h1,h2{
+  margin-bottom: 0;
+  font-family: "Segoe UI",Serif;
+}
+.Chathome img{
+  height: 450px;
+  width:450px;
+}
+
+
+/*CUSTOM SCROLL BAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #AAA;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }

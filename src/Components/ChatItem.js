@@ -1,13 +1,8 @@
- 
 import React, { Component } from 'react';
 import './ChatItem.css';
-
 import Avatar from './Avatar';
-
-import {
-    format,
-} from'timeago.js';
-
+import { formatDistanceToNow } from 'date-fns';
+import {Link} from 'react-router-dom';
 import classNames from 'classnames';
 
 export class ChatItem extends Component {
@@ -16,7 +11,7 @@ export class ChatItem extends Component {
         const statusColorType = this.props.statusColorType;
 
         return (
-            <div
+            <Link to={'/chat/'+this.props.title}
                 className={classNames('rce-container-citem', this.props.className)}
                 onClick={this.props.onClick}
                 onContextMenu={this.props.onContextMenu}>
@@ -60,8 +55,10 @@ export class ChatItem extends Component {
                                     this.props.date &&
                                     !isNaN(this.props.date) &&
                                     (
-                                        this.props.dateString ||
-                                        format(this.props.date)
+                                        this.props.dateString
+                                        ||
+                                            //todo
+                                        formatDistanceToNow(this.props.date)
                                     )
                                 }
                             </div>
@@ -80,7 +77,7 @@ export class ChatItem extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Link>
         );
     }
 }

@@ -1,5 +1,6 @@
  
 .rce-container-citem {
+    text-decoration: none;
     flex-direction: column;
     display: block;
     overflow: hidden;
@@ -15,14 +16,12 @@
     background: #f9f9f9;
     display: flex;
     flex-direction: row;
-    height: 72px;
+    height: 65px;
     cursor: pointer;
     user-select: none;
     max-width: 100%;
     overflow: hidden;
     min-width: 240px;
-    margin: 1px 1px ;
-    border-radius: 2px ;
 }
 
 .rce-citem:hover {

@@ -1,27 +1,32 @@
-// import { ChatList } from 'react-chat-elements';
-import 'react-chat-elements/dist/main.css';
 import './App.css';
-import ChatList from "./Components/ChatList";
-import ContactData from "./Data/ContactData";
+import Chathome from "./Components/Chathome";
+import Contacts from "./Components/Contacts";
+import ChatScreen from "./Components/ChatScreen";
+import {BrowserRouter as Router, Route, Switch,} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-        <div className="title">
-          <h1>ConnectX</h1>
-        </div>
-        <div className="Body">
-            <div className='contacts'>
-                <ChatList
-                    className='chat-list'
-                    dataSource={ContactData} />
+    return (
+        <Router>
+            <div className="App">
+                <div className="title">
+                    <h1 style={{marginLeft: '20px'}}>ConnectX</h1>
+                </div>
+                <div className="Body">
+                    <Contacts/>
+                    <div className='chat'>
+                        <Switch>
+                            <Route exact path="/">
+                                <Chathome/>
+                            </Route>
+                            <Route exact path="/chat/:id">
+                                <ChatScreen/>
+                            </Route>
+                        </Switch>
+                    </div>
+                </div>
             </div>
-            <div className='chat'>
-                <p>Chats</p>
-            </div>
-        </div>
-    </div>
-  );
+        </Router>
+    );
 }
 
 export default App;
