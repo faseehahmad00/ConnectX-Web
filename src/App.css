@@ -2,7 +2,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
+  height: 100vh;
 }
 .title{
   flex:0.1;
@@ -13,10 +13,11 @@
   align-items: center;
   max-height: 10vh;
   border-style: solid;
-  border-width: 0px 0px 1px 0px;
-  border-color: #EEE;
+  border-width: 0px 0px 0px 0px;
+  border-color: #DDD;
   border-radius: 2px;
   font-family: "Segoe UI",Serif;
+  max-height: 7.7vh;
 }
 .Body{
   flex:9.9;
@@ -25,18 +26,50 @@
   justify-content: flex-end;
   background-color: black;
   color: white;
-  max-height: 89vh;
+  max-height: 92vh;
+  min-width: 600px;
 }
 .contacts{
   flex:2.5;
-  background-color: #888;
-  max-height: 90vh;
+  background-color: #FFF;
   overflow: auto;
+  min-width: 250px;
 }
+.contactsHeader{
+  color: black;
+  height: 42px;
+  max-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width : 90%;
+  border: 1px solid #EEE;
+  border-radius: 20px;
+  height: 30px;
+}
+
+.contactsHeader input{
+  width: 80%;
+  height: 20px;
+  border:none;
+}
+
+.contactsHeader input:focus{
+  box-shadow: none;
+  outline: none;
+}
+
 .chat{
   flex:7.5;
   background-color: white;
+  min-width: 350px;
 }
+
 .Chathome{
   height:100%;
   color: black;
@@ -58,7 +91,7 @@
 /*CUSTOM SCROLL BAR*/
 /* width */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 2px;
 }
 
 /* Track */

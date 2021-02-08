@@ -3,6 +3,7 @@ import Chathome from "./Components/Chathome";
 import Contacts from "./Components/Contacts";
 import ChatScreen from "./Components/ChatScreen";
 import {BrowserRouter as Router, Route, Switch,} from "react-router-dom";
+import messages from './Data/Message';
 
 function App() {
     return (
@@ -19,7 +20,7 @@ function App() {
                                 <Chathome/>
                             </Route>
                             <Route exact path="/chat/:id">
-                                <ChatScreen/>
+                                <ChatScreen messages={messages} userid={'1'}/>
                             </Route>
                         </Switch>
                     </div>

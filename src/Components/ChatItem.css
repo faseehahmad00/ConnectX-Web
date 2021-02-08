@@ -13,10 +13,10 @@
 
 .rce-citem {
     position: relative;
-    background: #f9f9f9;
+    background: white;
     display: flex;
     flex-direction: row;
-    height: 65px;
+    height: 55px;
     cursor: pointer;
     user-select: none;
     max-width: 100%;

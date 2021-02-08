@@ -1,5 +1,6 @@
  
 .rce-container-clist {
+    margin-top: 2px;
     display: block;
     overflow: auto;
 }
