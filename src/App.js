@@ -9,9 +9,9 @@ function App() {
     return (
         <Router>
             <div className="App">
-                <div className="title">
+                {/* <div className="title">
                     <h1 style={{marginLeft: '20px'}}>ConnectX</h1>
-                </div>
+                </div> */}
                 <div className="Body">
                     <Contacts/>
                     <div className='chat'>

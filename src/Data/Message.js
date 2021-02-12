@@ -4,42 +4,49 @@ const messages = [
         createdAt: new Date(),
         sender:'2',
         messagetext:`hello`,
+        status:'read'
     },
     {   
         id:2,  //unique id 
         createdAt: new Date(),
         sender:'1',
         messagetext:`hi`,
+        status:'read'
     },
     {   
         id:3,  //unique id 
         createdAt: new Date(),
         sender:'2',
         messagetext:`how're you ?`,
+        status:'read'
     },
     {   
         id:4,  //unique id 
         createdAt: new Date(),
         sender:'1',
         messagetext:`I'm fine .What about you`,
+        status:'read'
     },
     {   
         id:5,  //unique id 
         createdAt: new Date(),
         sender:'2',
         messagetext:`i'm fine too`,
+        status:'read'
     },
     {   
         id:6,  //unique id 
         createdAt: new Date(),
         sender:'1',
         messagetext:`hope to see you soon `,
+        status:'read'
     },
     {   
         id:7,  //unique id 
         createdAt: new Date(),
         sender:'2',
         messagetext:`yeah sure.`,
+        status:'read'
     },
     {   
         id:8,  //unique id 
@@ -56,12 +63,17 @@ const messages = [
         JavaScript engines were originally used only in web browsers, but they are now core components of other runtime systems, such as Node.js and Deno. These systems are used to build servers and are also integrated into frameworks, such as Electron and Cordova, for creating a variety of applications.
         
         Although there are similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design.`,
+        status:'read'
+
     },
+    
     {   
         id:9,  //unique id 
         createdAt: new Date(),
         sender:'2',
         messagetext:`.`,
+        status:'read'
+
     },
     {   
         id:10,  //unique id 
@@ -78,6 +90,8 @@ const messages = [
         JavaScript engines were originally used only in web browsers, but they are now core components of other runtime systems, such as Node.js and Deno. These systems are used to build servers and are also integrated into frameworks, such as Electron and Cordova, for creating a variety of applications.
         
         Although there are similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design.`,
+        status:'sent',
+
     },
     
 ]
