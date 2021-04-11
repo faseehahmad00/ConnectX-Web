@@ -14,8 +14,8 @@ export default function ChatScreen({ messages, userid }) {
     let [disabled,setDisabled] = useState(true);
 
     function updateScroll() {
-        // let element = document.getElementById("bodyid");
-        // element.scrollTop = element.scrollHeight;
+        let element = document.getElementById("bodyid");
+        element.scrollTop = element.scrollHeight;
     }
 
 
